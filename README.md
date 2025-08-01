@@ -1,5 +1,5 @@
 # Co-relation between LDA line S1, S2 and Calibration VEPU, 
-#VEPM data
+# VEPM data
 
 ## 📘 Project Overview
 In modern manufacturing, calibration delays are common due to weak correlations between pump output values (S1/S2) and input parameters like `VEPM_MP`, `VEPU_MP`, and `VEP_MP`. These inefficiencies demand frequent manual corrections during test bench calibration, reducing overall throughput and precision.
