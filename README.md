@@ -1,5 +1,35 @@
-In modern manufacturing, calibration efficiency is often hindered by the weak correlation between pump values (S1/S2) and input parameters such as VEPM_MP, VEPU_MP and VEP_MP. This disconnect complicates test bench calibration and leads to frequent manual corrections, which slow down the process.
+# Co-relation between LDA line S1, S2 and Calibration VEPU, 
+VEPM data
 
-To overcome this challenge, the project adopts a machine learning strategy focused on multi-output regression. This approach is tailored to capture complex nonlinear relationships between multiple input features and pump outputs. By leveraging the predictive power of a MultiOutput XGBoost Regressor, the model is trained to forecast both S1 and S2 values simultaneously with high accuracy.
+## 📘 Project Overview
+In modern manufacturing, calibration delays are common due to weak correlations between pump output values (S1/S2) and input parameters like `VEPM_MP`, `VEPU_MP`, and `VEP_MP`. These inefficiencies demand frequent manual corrections during test bench calibration, reducing overall throughput and precision.
 
-The benefit of this dual prediction framework is a significant reduction in manual correction time during calibration. It streamlines operations, enhances reliability, and facilitates faster, data-driven decisions on the shop floor. Ultimately, this solution contributes to more efficient manufacturing workflows and minimizes delays in product testing and validation.
+This project applies machine learning to automate and streamline the calibration process.
+
+## 🎯 Objective
+Develop an accurate and efficient model to:
+- Predict `S1` and `S2` pump values simultaneously
+- Minimize manual adjustments and correction cycles
+- Improve decision-making speed on the production line
+
+## 🧠 Approach
+The solution adopts a **MultiOutput Regression** framework:
+- Input features: `VEPM_MP`, `VEPU_MP`, `VEP_MP`
+- Output targets: `S1`, `S2` pump values
+- Model: **MultiOutput XGBoost Regressor**
+
+This setup captures complex nonlinear relationships between input and output variables while maintaining high predictive accuracy.
+
+## 🚀 Key Benefits
+- 📉 Reduced manual correction time
+- ⚙️ Enhanced calibration reliability
+- ⏱ Accelerated setup and testing cycles
+- 📊 Facilitated data-driven decision-making on the shop floor
+
+## 🛠️ Tech Stack
+- Python
+- XGBoost
+- scikit-learn
+- pandas, NumPy, matplotlib
+
+## 📁 Repository Structure
