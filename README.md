@@ -1,2 +1,5 @@
-# Co-relation-between-LDA-line-S1-S2-and-Calibration-VEPU-VEPM-data
-In manufacturing, pump values S1/S2 show weak correlation with inputs like VEPM_MP, VEPU_MP and VEP_MP, leading to calibration delays. To solve this, a MultiOutput XGBoost Regressor predicts both pump values simultaneously. This machine learning approach reduces manual correction time and boosts efficiency on the shop floor.
+In modern manufacturing, calibration efficiency is often hindered by the weak correlation between sensor values (S1/S2) and input parameters such as VEPM_MP and VEP_MP. This disconnect complicates test bench calibration and leads to frequent manual corrections, which slow down the process.
+
+To overcome this challenge, the project adopts a machine learning strategy focused on multi-output regression. This approach is tailored to capture complex nonlinear relationships between multiple input features and sensor outputs. By leveraging the predictive power of a MultiOutput XGBoost Regressor, the model is trained to forecast both S1 and S2 values simultaneously with high accuracy.
+
+The benefit of this dual prediction framework is a significant reduction in manual correction time during calibration. It streamlines operations, enhances reliability, and facilitates faster, data-driven decisions on the shop floor. Ultimately, this solution contributes to more efficient manufacturing workflows and minimizes delays in product testing and validation.
